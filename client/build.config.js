@@ -64,7 +64,7 @@ module.exports = {
       'vendor/angular-aria/angular-aria.js',
       'vendor/angular-animate/angular-animate.js',
       'vendor/angular-material/angular-material.js',
-      'node_modules/socket.io-client/socket.io.js'
+      'node_modules/socket.io-client/dist/socket.io.js'
     ],
     css: [
       'vendor/angular-material/angular-material.css'

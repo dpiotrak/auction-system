@@ -34,7 +34,8 @@
     var vm = this;
 
     vm.credentials = {
-      username: ''
+        username: '',
+        password: ''
     };
 
     vm.login = function (credentials) {

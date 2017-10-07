@@ -54,10 +54,11 @@ module.exports = function (io, socket) {
     try {
       Auction.addBid(currentAuction, data.player, data.bid);
 
-      // if less than 10s remaining, the time left is raise up again to 10s
-      if (currentAuction.timeLeft <= 10) {
-        currentAuction.timeLeft = 10;
-      }
+      // add 30s
+        //
+        //
+        currentAuction.timeLeft = currentAuction.timeLeft +30;
+
       emitAuctionChange(currentAuction, callback);
     } catch (error) {
       callback(error.message);
